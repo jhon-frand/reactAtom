@@ -10,7 +10,7 @@ export function SidebarCard() {
         <div className="circle2"></div>
         <h3>Cerrar sesión</h3>
         <div className="contentBtn">
-          <Btnsave titulo="Closed" bgcolor="#f8f2fd"  />
+          <Btnsave titulo="SALR" bgcolor="#f8f2fd"  />
         </div>
       </div>
     </Container>
@@ -25,7 +25,6 @@ const Container = styled.div`
 
   .icon {
     position: absolute;
-    color: yellow;
     font-size: 3rem;
     border-radius: 50%;
     top: -8px;
@@ -36,8 +35,7 @@ const Container = styled.div`
   .cardContent {
     position: relative;
     padding: 1rem;
-    background: ${(props) => props.theme.bg4};
-    background: orange;
+    background: ${(props) => props.theme.bg5};
     border-radius: 10px;
     overflow: hidden;
 

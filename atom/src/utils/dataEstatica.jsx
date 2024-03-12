@@ -37,9 +37,9 @@ export const LinksArray = [
     to: "/",
   },
   {
-    label: "Kardex",
+    label: "Alexander",
     icon: <v.iconocategorias />,
-    to: "/kardex",
+    to: "/HomeA",
   },
   {
     label: "Reportes",
@@ -50,7 +50,7 @@ export const LinksArray = [
 ];
 export const SecondarylinksArray = [
   {
-    label: "Settings",
+    label: "Configuración",
     icon: <AiOutlineSetting />,
     to: "/configurar",
   },

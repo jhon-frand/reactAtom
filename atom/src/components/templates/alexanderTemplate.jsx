@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { SidebarCard } from "../../../index";
 
-
-export function HomeTemplate() {
+export function HomeAlex() {
   return (
     <Container>
-      <h1>ALEXANDER MARTINEZ 1° (HOME)</h1>
+      <div>
+        <SidebarCard />
+      </div>
     </Container>
   );
 }

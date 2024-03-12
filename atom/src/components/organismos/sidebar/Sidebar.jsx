@@ -3,8 +3,9 @@ import {
   
   LinksArray,
   SecondarylinksArray,
-  SidebarCard,
+  // SidebarCard,
   ToggleTema,
+  
 } from "../../../index";
 import {v} from "../../../styles/variables"
 import { NavLink } from "react-router-dom";
@@ -20,7 +21,7 @@ export function Sidebar({ state, setState }) {
           <div className="imgcontent">
             <img src={v.logo} />
           </div>
-          <h2>MotAtomic</h2>
+          <h2>CoordiSoft</h2>
         </div>
         {LinksArray.map(({ icon, label, to }) => (
           <div
@@ -59,7 +60,7 @@ export function Sidebar({ state, setState }) {
         ))}
         <ToggleTema/>
         <Divider />
-        {state && <SidebarCard/>}
+        {/* {state && <SidebarCard />} */}
       </Container>
     </Main>
   );
@@ -87,7 +88,6 @@ const Container = styled.div`
   &.active {
     width: 220px;
   }
-  
   .Logocontent {
     display: flex;
     justify-content: center;
@@ -128,7 +128,7 @@ const Container = styled.div`
     padding: 0 5%;
     position: relative;
     &:hover {
-      background: ${(props) => props.theme.bg4};
+      background: ${(props) => props.theme.bgAlpha};
     }
     .Links {
       display: flex;
@@ -152,15 +152,13 @@ const Container = styled.div`
         opacity: 0;
       }
       &.active {
-        color: ${(props) => props.theme.primary};
-        color: yellow;
+        color: ${(props) => props.theme.bg5};
         font-weight:600;
         &::before {
           content: "";
           position: absolute;
           height: 100%;
-          background: ${(props) => props.theme.primary};
-          background: yellow;
+          background: ${(props) => props.theme.bg5};
           width: 4px;
           border-radius: 10px;
           left: 0;
